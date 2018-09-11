@@ -5,19 +5,19 @@ int main(){
   int index = 1, max = 1;
   int i;
   for(i = 2; i < 1000000; i++){
-    int chainLength = 1;
-    long currentNum = i;
-    while(currentNum != 1){
-      chainLength += 1;
-      if(currentNum % 2 == 0){
-        currentNum /= 2;
+    int chain_length = 1;
+    long current_num = i;
+    while(current_num != 1){
+      chain_length += 1;
+      if(current_num % 2 == 0){
+        current_num /= 2;
       }
       else{
-        currentNum = 3 * currentNum + 1;
+        current_num = 3 * current_num + 1;
       }
     }
-    if(chainLength > max){
-      max = chainLength;
+    if(chain_length > max){
+      max = chain_length;
       index = i;
     }
   }

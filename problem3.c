@@ -2,13 +2,13 @@
 
 int main(){
   long num = 600851475143;
-  int smallestEligiblePrime = 2;
-  while(num > smallestEligiblePrime){
-    if(num % smallestEligiblePrime == 0){
-      num /= smallestEligiblePrime;
+  int smallest_eligible_prime = 2;
+  while(num > smallest_eligible_prime){
+    if(num % smallest_eligible_prime == 0){
+      num /= smallest_eligible_prime;
     }
     else{
-      smallestEligiblePrime++;
+      smallest_eligible_prime++;
     }
   }
   printf("%ld\n",num);
